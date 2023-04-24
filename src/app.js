@@ -1,11 +1,17 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+  let pronoun = ['the','our'];
+  let adj = ['great', 'big' ];
+  let noun = ['jogger','racoon'];
+  let extension = ['.com','.net']
+
+  for (let itemP of pronoun) {
+    for (let itemA of adj){
+        for(let itemN of noun){
+            for (itemE of extension){
+                console.log(`${itemP}${itemA}${itemN}${itemE}`)
+            };
+          };
+        };
+      };
+    };
